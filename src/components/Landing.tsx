@@ -4,8 +4,8 @@ import { work, open } from '@/utils/font';
 
 function Landing() {
   return (
-    <div className="flex justify-center">
-      <div className="relative w-96 h-96 mr-10">
+    <div className="flex justify-center mb-10">
+      <div className="relative w-72 h-72 mr-10">
         <Image src="/images/milay.jpeg" alt="Profile" fill className="object-cover rounded-[50%]" />
       </div>
       <div className="flex flex-col items-start justify-center">
