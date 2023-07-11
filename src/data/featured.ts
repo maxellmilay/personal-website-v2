@@ -12,6 +12,8 @@ const featured = [
       image: 'start',
       text: 'end',
     },
+    link: 'https://cmsc-blog.vercel.app',
+    repo: 'https://github.com/maxellmilay/cmsc-blog',
   },
   {
     id: 2,
@@ -24,6 +26,8 @@ const featured = [
       image: 'end',
       text: 'start',
     },
+    link: 'https://medata-frontend.vercel.app',
+    repo: 'https://github.com/maxellmilay/medata-frontend',
   },
   {
     id: 3,
@@ -36,6 +40,8 @@ const featured = [
       image: 'start',
       text: 'end',
     },
+    link: 'https://www.tmifellowship.org',
+    repo: 'https://github.com/maxellmilay/tmi',
   },
 ];
 export default featured;

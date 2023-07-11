@@ -2,6 +2,7 @@ import React from 'react';
 import { work, open } from '@/utils/font';
 import Image from 'next/image';
 import featured from '@/data/featured';
+import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 
 function Featured() {
   return (
@@ -38,6 +39,14 @@ function Featured() {
                     </p>
                   );
                 })}
+              </div>
+              <div className="flex">
+                <a href={data.repo} className="px-1 py-1">
+                  <FaGithub />
+                </a>
+                <a href={data.link} className="px-1 py-1">
+                  <FaExternalLinkAlt />
+                </a>
               </div>
             </div>
           </div>
