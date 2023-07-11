@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { work, open } from '@/utils/font';
+import Link from 'next/link';
 
 function Landing() {
   return (
@@ -13,11 +14,12 @@ function Landing() {
         <h2 className={`${open.className} text-lg sm:text-xl font-thin mb-8`}>
           Full Stack Developer
         </h2>
-        <button
+        <Link
           className={`${work.className} p-4 border border-solid border-white rounded hover:bg-white hover:text-black`}
+          href="#footer"
         >
           LET&apos;S CONNECT
-        </button>
+        </Link>
       </div>
     </div>
   );
