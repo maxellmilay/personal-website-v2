@@ -11,7 +11,7 @@ function Experience() {
   const [windowSize] = useScreen();
 
   return (
-    <div className="flex flex-col mb-16">
+    <div id="experience" className="flex flex-col mb-16">
       <p className={`${work.className} text-2xl mx-auto`}>Experience</p>
       <div className="h-[0.05rem] w-full bg-white my-5 md:my-10" />
       <div className="flex md:flex-row flex-col items-center md:items-start">
@@ -31,9 +31,7 @@ function Experience() {
           )}
         </div>
 
-        <div
-          className={`flex flex-col md:ml-[1rem] items-center md:items-start ${open.className}`}
-        >
+        <div className={`flex flex-col md:ml-[1rem] items-center md:items-start ${open.className}`}>
           <p className="text-2xl mb-1">{currentExperience.position}</p>
           <p className="text-xs font-thin mb-8">
             {currentExperience.start} - {currentExperience.end}

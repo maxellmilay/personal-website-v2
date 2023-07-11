@@ -5,7 +5,7 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 function Projects() {
   return (
-    <div className="flex flex-col mb-16 justify-center">
+    <div id="projects" className="flex flex-col mb-16 justify-center">
       <p className={`${work.className} text-2xl mb-10`}>Other Projects</p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {projects.map((project) => {

@@ -4,7 +4,7 @@ import { open } from '@/utils/font';
 
 function About() {
   return (
-    <div className="flex justify-center w-full md:w-auto mb-16">
+    <div id="about" className="flex justify-center w-full md:w-auto mb-16">
       <div className="flex bg-[#121212] w-full mx-[10%] md:mx-0 md:w-[40rem]">
         <p
           className={`${open.className} font-thin text-xs sm:text-base px-8 py-10 sm:px-12 sm:py-14`}
