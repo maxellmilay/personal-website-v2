@@ -1,35 +1,23 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { open } from '@/utils/font';
-import useScreen from '@/hooks/useScreen';
+import useWindowSize from '@/hooks/useScreen';
 import { FaBars } from 'react-icons/fa';
 import Link from 'next/link';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isCompressed, setIsCompressed] = useState(false);
 
   const handleDropdownClick = () => {
     setIsOpen(!isOpen);
   };
 
-  const [windowSize] = useScreen();
-  useEffect(() => {
-    if (windowSize === -1) {
-      return;
-    }
-
-    if (windowSize > 640) {
-      setIsCompressed(false);
-    } else {
-      setIsCompressed(true);
-    }
-  }, [windowSize]);
+  const windowSize = useWindowSize();
 
   return (
     <div>
-      {!isCompressed ? (
+      {windowSize.width > 640 ? (
         <div
           className={`flex ${open.className} font-thin my-5 justify-center lg:justify-end lg:px-16`}
         >

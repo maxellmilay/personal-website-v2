@@ -4,11 +4,11 @@ import React, { useState } from 'react';
 import { work, open } from '@/utils/font';
 import experience from '@/data/experience';
 import { FaCaretRight } from 'react-icons/fa';
-import useScreen from '@/hooks/useScreen';
+import useWindowSize from '@/hooks/useScreen';
 
 function Experience() {
   const [currentExperience, setCurrentExperience] = useState(experience[0]);
-  const [windowSize] = useScreen();
+  const windowSize = useWindowSize();
 
   return (
     <div id="experience" className="flex flex-col mb-16">
@@ -26,7 +26,7 @@ function Experience() {
               </button>
             );
           })}
-          {windowSize > 720 && (
+          {windowSize.width > 720 && (
             <div className="border-l border-[#212121] h-9 flex justify-center py-2" />
           )}
         </div>
