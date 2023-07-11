@@ -13,11 +13,11 @@ function Navbar() {
     setIsOpen(!isOpen);
   };
 
-  const windowSize = useWindowSize();
+  const [windowSize] = useWindowSize();
 
   return (
     <div>
-      {windowSize.width > 640 ? (
+      {windowSize > 640 ? (
         <div
           className={`flex ${open.className} font-thin my-5 justify-center lg:justify-end lg:px-16`}
         >
