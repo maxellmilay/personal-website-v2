@@ -32,7 +32,7 @@ function Experience() {
         </div>
 
         <div
-          className={`flex flex-col w-[24rem] md:ml-[1rem] items-center md:items-start ${open.className}`}
+          className={`flex flex-col md:ml-[1rem] items-center md:items-start ${open.className}`}
         >
           <p className="text-2xl mb-1">{currentExperience.position}</p>
           <p className="text-xs font-thin mb-8">
@@ -42,8 +42,9 @@ function Experience() {
             return (
               <div key={index} className="flex flex-row mb-5">
                 <FaCaretRight className="mr-2" />
-                <div></div>
-                <p className="flex w-[22rem] font-thin text-xs text-[#AFAFAF] leading-4">{data}</p>
+                <p className="flex w-[15rem] sm:w-[22rem] font-thin text-xs text-[#AFAFAF] leading-4">
+                  {data}
+                </p>
               </div>
             );
           })}
