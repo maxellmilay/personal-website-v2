@@ -18,7 +18,7 @@ function Experience() {
             return (
               <button
                 key={data.id}
-                className="bg-[#212121] border-l border-white  flex justify-center py-2 text-[#AFAFAF] hover:text-white hover:cursor-pointer"
+                className="bg-[#121212] border-l border-white  flex justify-center py-2 text-[#AFAFAF] hover:text-white hover:cursor-pointer"
               >
                 <p className={`${work.className}`}>{data.company}</p>
               </button>

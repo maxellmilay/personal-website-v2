@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 function Footer() {
   return (
-    <div className={`flex flex-col items-center ${work.className}`}>
+    <div className={`flex flex-col items-center ${work.className} mb-16`}>
       <p className="font-medium mb-1">Designed and Developed by Maxell Milay</p>
       <p className="font-extralight text-xs mb-2">milaymaxell@gmail.com</p>
       <div className="flex">
