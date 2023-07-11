@@ -9,8 +9,8 @@ const featured = [
     tech: [Tech.TAILWIND, Tech.NEXT],
     imgURL: '/images/featured/cmsc-blog.png',
     align: {
-      image: 'start',
-      text: 'end',
+      image: 'justify-start',
+      text: 'items-end',
     },
     link: 'https://cmsc-blog.vercel.app',
     repo: 'https://github.com/maxellmilay/cmsc-blog',
@@ -23,8 +23,8 @@ const featured = [
     tech: [Tech.REACT, Tech.TAILWIND, Tech.REDUX, Tech.FIREBASE],
     imgURL: '/images/featured/medata.png',
     align: {
-      image: 'end',
-      text: 'start',
+      image: 'justify-end',
+      text: 'items-start',
     },
     link: 'https://medata-frontend.vercel.app',
     repo: 'https://github.com/maxellmilay/medata-frontend',
@@ -37,8 +37,8 @@ const featured = [
     tech: [Tech.TAILWIND, Tech.NEXT],
     imgURL: '/images/featured/tmi-blog.png',
     align: {
-      image: 'start',
-      text: 'end',
+      image: 'justify-start',
+      text: 'items-end',
     },
     link: 'https://www.tmifellowship.org',
     repo: 'https://github.com/maxellmilay/tmi',

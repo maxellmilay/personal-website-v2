@@ -11,7 +11,7 @@ function Featured() {
       {featured.map((data) => {
         return (
           <div
-            className={`flex lg:flex-row flex-col items-center lg:items-start lg:justify-${data.align.image} mb-16`}
+            className={`flex lg:flex-row flex-col items-center lg:items-start lg:${data.align.image} mb-16`}
             key={data.id}
           >
             <div className="relative w-[80%] md:w-[35rem] h-[12rem] sm:h-[20rem]">
@@ -19,18 +19,20 @@ function Featured() {
               <div className="w-full h-full bg-black opacity-60" />
             </div>
             <div
-              className={`flex flex-col lg:absolute lg:w-[55rem] py-5 lg:py-0 lg:h-[20rem] items-center lg:items-${data.align.text} justify-center`}
+              className={`flex flex-col lg:absolute z-10 lg:w-[55rem] py-5 lg:py-0 lg:h-[20rem] justify-center ${data.align.text}`}
             >
-              <p className={`${open.className} text-2xl sm:text-3xl font-semibold mb-6 sm:mb-8`}>
+              <p
+                className={`${open.className} text-2xl sm:text-3xl font-semibold mb-6 sm:mb-8 mx-auto lg:mx-0`}
+              >
                 {data.name}
               </p>
               <p
-                className={`bg-[#121212] mx-[10%] md:mx-0 md:w-[30rem] font-thin text-sm p-5 ${open.className}`}
+                className={`bg-[#121212] mx-[10%] md:mx-0 md:w-[30rem] font-thin text-sm p-5 ${open.className} mx-auto lg:mx-0`}
               >
                 {data.description}
               </p>
               <div
-                className={`flex ${work.className} font-thin text-xs sm:text-base mx-[10%] sm:mx-0`}
+                className={`flex ${work.className} font-thin text-xs sm:text-base mx-auto lg:mx-0`}
               >
                 {data.tech.map((value, index) => {
                   return (
@@ -40,7 +42,7 @@ function Featured() {
                   );
                 })}
               </div>
-              <div className="flex">
+              <div className="flex mx-auto lg:mx-0">
                 <a href={data.repo} className="px-1 py-1">
                   <FaGithub />
                 </a>

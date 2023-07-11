@@ -21,7 +21,7 @@ const projects = [
     id: 3,
     name: 'Personal Website v1',
     description: 'First version of my personal website',
-    link: 'https://maxell-milay.vercel.app',
+    link: 'https://old-maxell-milay.vercel.app',
     repo: 'https://github.com/maxellmilay/personal-website',
     tech: [Tech.NEXT, Tech.TAILWIND],
   },
