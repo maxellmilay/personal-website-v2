@@ -62,7 +62,7 @@ const projects = [
     id: 8,
     name: 'Personal Website v2',
     description: 'Second version of my personal website',
-    link: '',
+    link: 'https://maxell-milay.vercel.app',
     repo: 'https://github.com/maxellmilay/personal-website-v2',
     tech: [Tech.NEXT, Tech.TAILWIND],
   },
