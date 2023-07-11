@@ -10,7 +10,6 @@ function Featured() {
       {featured.map((data) => {
         const alignment =
           data.id % 2 == 0 ? { image: 'end', text: 'start' } : { image: 'start', text: 'end' };
-
         return (
           <div className={`flex justify-${alignment.image} mb-16`} key={data.id}>
             <div className="relative w-[35rem] h-[20rem]">
