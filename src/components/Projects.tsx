@@ -5,9 +5,9 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 function Projects() {
   return (
-    <div className="flex flex-col w-[55rem] mb-16 justify-center">
+    <div className="flex flex-col mb-16 justify-center">
       <p className={`${work.className} text-2xl mb-10`}>Other Projects</p>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {projects.map((project) => {
           return (
             <div key={project.id} className="flex justify-center items-center my-5">
@@ -28,8 +28,17 @@ function Projects() {
                   })}
                 </div>
                 <div className="flex">
-                  {project.link != '' && <FaExternalLinkAlt className="mr-2" />}
-                  {project.repo != '' && <FaGithub className="mr-2" />}
+                  {project.link != '' && (
+                    <a href={project.link}>
+                      <FaExternalLinkAlt className="mr-2" />
+                    </a>
+                  )}
+
+                  {project.repo != '' && (
+                    <a href={project.repo}>
+                      <FaGithub className="mr-2" />
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

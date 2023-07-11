@@ -4,30 +4,36 @@ import React, { useState } from 'react';
 import { work, open } from '@/utils/font';
 import experience from '@/data/experience';
 import { FaCaretRight } from 'react-icons/fa';
+import useScreen from '@/hooks/useScreen';
 
 function Experience() {
   const [currentExperience, setCurrentExperience] = useState(experience[0]);
+  const [windowSize] = useScreen();
 
   return (
-    <div className="flex flex-col w-[40rem] mb-16">
+    <div className="flex flex-col mb-16">
       <p className={`${work.className} text-2xl mx-auto`}>Experience</p>
-      <div className="h-[0.05rem] w-[40rem] bg-white my-10" />
-      <div className="flex">
-        <div className="flex flex-col w-[14rem] mr-[2rem]">
+      <div className="h-[0.05rem] w-full bg-white my-5 md:my-10" />
+      <div className="flex md:flex-row flex-col items-center md:items-start">
+        <div className="flex md:flex-col w-[14rem] md:mr-[2rem] mb-5 md:mb-0 justify-center md:justify-start">
           {experience.map((data) => {
             return (
               <button
                 key={data.id}
-                className="bg-[#121212] border-l border-white  flex justify-center py-2 text-[#AFAFAF] hover:text-white hover:cursor-pointer"
+                className="bg-[#121212] md:border-l md:border-white  flex justify-center px-4 py-2 mx-2 md:px-0 md:mx-0 text-[#AFAFAF] hover:text-white hover:cursor-pointer"
               >
                 <p className={`${work.className}`}>{data.company}</p>
               </button>
             );
           })}
-          <div className="border-l border-[#212121] h-9 flex justify-center py-2" />
+          {windowSize > 720 && (
+            <div className="border-l border-[#212121] h-9 flex justify-center py-2" />
+          )}
         </div>
 
-        <div className={`flex flex-col w-[24rem] ml-[1rem] ${open.className}`}>
+        <div
+          className={`flex flex-col w-[24rem] md:ml-[1rem] items-center md:items-start ${open.className}`}
+        >
           <p className="text-2xl mb-1">{currentExperience.position}</p>
           <p className="text-xs font-thin mb-8">
             {currentExperience.start} - {currentExperience.end}
