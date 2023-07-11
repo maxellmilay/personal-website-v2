@@ -10,13 +10,16 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <Landing />
-      <About />
-      <Experience />
-      <Featured />
-      <Projects />
-      <Footer />
+      <div className="flex flex-col items-center">
+        <Landing />
+        <About />
+        <Experience />
+        <Featured />
+        <Projects />
+        <Footer />
+      </div>
     </div>
   );
 }
+
 
