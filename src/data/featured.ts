@@ -8,6 +8,10 @@ const featured = [
       'CMSC Blog contains anecdotes and informational blogs revolving around technology and the life of computer science majors.',
     tech: [Tech.TAILWIND, Tech.NEXT],
     imgURL: '/images/featured/cmsc-blog.png',
+    align: {
+      image: 'start',
+      text: 'end',
+    },
   },
   {
     id: 2,
@@ -16,6 +20,10 @@ const featured = [
       'Medata is a media progress tracking platform, where users can track the progress of the media they are currently consuming (e.g. TV Series, Books, Anime). Users can add and track the media title, total content to consume (e.g. book pages, chapters, episodes), current content consumed, and others.',
     tech: [Tech.REACT, Tech.TAILWIND, Tech.REDUX, Tech.FIREBASE],
     imgURL: '/images/featured/medata.png',
+    align: {
+      image: 'end',
+      text: 'start',
+    },
   },
   {
     id: 3,
@@ -24,6 +32,10 @@ const featured = [
       'TMI Fellowship is a blog website that showcases the activities and missions of a church.',
     tech: [Tech.TAILWIND, Tech.NEXT],
     imgURL: '/images/featured/tmi-blog.png',
+    align: {
+      image: 'start',
+      text: 'end',
+    },
   },
 ];
 export default featured;

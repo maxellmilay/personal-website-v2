@@ -8,9 +8,15 @@ function Footer() {
       <p className="font-medium mb-1">Designed and Developed by Maxell Milay</p>
       <p className="font-extralight text-xs mb-2">milaymaxell@gmail.com</p>
       <div className="flex">
-        <FaGithub className="m-1" />
-        <FaLinkedin className="m-1" />
-        <FaInstagram className="m-1" />
+        <a href="https://github.com/maxellmilay">
+          <FaGithub className="m-1" />
+        </a>
+        <a href="https://www.linkedin.com/in/maxell-milay-354517207/">
+          <FaLinkedin className="m-1" />
+        </a>
+        <a href="https://www.instagram.com/mirai.max">
+          <FaInstagram className="m-1" />
+        </a>
       </div>
     </div>
   );
