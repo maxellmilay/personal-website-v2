@@ -38,7 +38,7 @@ function Experience() {
           </p>
           {currentExperience.responsibilities.map((data, index) => {
             return (
-              <div key={index} className="flex flex-row mb-5">
+              <div key={data} className="flex flex-row mb-5">
                 <FaCaretRight className="mr-2" />
                 <p className="flex w-[15rem] sm:w-[22rem] font-thin text-xs text-[#AFAFAF] leading-4">
                   {data}

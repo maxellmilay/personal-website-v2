@@ -11,7 +11,7 @@ function Featured() {
       {featured.map((data) => {
         return (
           <div
-            className={`flex lg:flex-row flex-col items-center lg:items-start lg:${data.align.image} mb-16`}
+            className={`flex lg:flex-row flex-col items-center lg:items-start ${data.align.image} mb-16`}
             key={data.id}
           >
             <div className="relative w-[80%] md:w-[35rem] h-[12rem] sm:h-[20rem]">
