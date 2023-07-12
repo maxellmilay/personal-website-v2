@@ -28,7 +28,13 @@ function Navbar() {
           <Link className="px-8 py-3 text-[#AFAFAF] hover:text-white" href="#experience">
             Experience
           </Link>
-          <button className="px-8 py-3 text-[#AFAFAF] hover:text-white">Resume</button>
+          <Link
+            className="px-8 py-3 text-[#AFAFAF] hover:text-white"
+            href="/Resume.pdf"
+            target="_blank"
+          >
+            Resume
+          </Link>
         </>
       ) : (
         <>

@@ -31,9 +31,14 @@ function Dropdown(props: PropsInterface) {
       >
         Experience
       </Link>
-      <button className="px-4 py-3 text-black hover:text-white" onClick={handleDropdownClick}>
+      <Link
+        className="px-4 py-3 text-black hover:text-white"
+        onClick={handleDropdownClick}
+        href="/Resume.pdf"
+        target="_blank"
+      >
         Resume
-      </button>
+      </Link>
     </div>
   );
 }
