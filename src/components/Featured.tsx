@@ -27,7 +27,7 @@ function Featured() {
                 {data.name}
               </p>
               <p
-                className={`bg-[#121212] mx-[10%] md:mx-0 md:w-[30rem] font-thin text-sm p-5 ${open.className} mx-auto lg:mx-0`}
+                className={`bg-[#121212] w-[95%] md:mx-0 md:w-[30rem] font-thin text-sm p-5 ${open.className} mx-auto lg:mx-0`}
               >
                 {data.description}
               </p>
