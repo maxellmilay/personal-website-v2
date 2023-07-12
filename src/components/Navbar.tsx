@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { open } from '@/utils/font';
 import useWindowSize from '@/hooks/useScreen';
 import { FaBars } from 'react-icons/fa';
@@ -13,11 +13,11 @@ function Navbar() {
     setIsOpen(!isOpen);
   };
 
-  const [windowSize] = useWindowSize();
+  const { width } = useWindowSize();
 
   return (
     <div>
-      {windowSize > 640 ? (
+      {width > 640 ? (
         <div
           className={`flex ${open.className} font-thin my-5 justify-center lg:justify-end lg:px-16`}
         >
