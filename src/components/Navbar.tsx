@@ -5,18 +5,18 @@ import { open } from '@/utils/font';
 import useWindowSize from '@/hooks/useScreen';
 import { FaBars } from 'react-icons/fa';
 import Link from 'next/link';
+import Dropdown from './Dropdown';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const { width } = useWindowSize();
 
   const handleDropdownClick = () => {
     setIsOpen(!isOpen);
   };
 
-  const { width } = useWindowSize();
-
   return (
-    <div className={`flex ${open.className} font-thin my-5 justify-center lg:justify-end lg:px-16`}>
+    <div className={`flex ${open.className} font-thin my-5 justify-end lg:px-16`}>
       {width > 640 ? (
         <>
           <Link className="px-8 py-3 text-[#AFAFAF] hover:text-white" href="#about">
@@ -32,40 +32,10 @@ function Navbar() {
         </>
       ) : (
         <>
-          <button onClick={handleDropdownClick}>
+          <button onClick={handleDropdownClick} className="mx-8">
             <FaBars className="text-3xl" />
           </button>
-          {isOpen && (
-            <div className="flex flex-col absolute z-10 items-center bg-white top-14 w-32">
-              <Link
-                className="px-4 py-3 text-black hover:text-white"
-                href="#about"
-                onClick={handleDropdownClick}
-              >
-                About
-              </Link>
-              <Link
-                className="px-4 py-3 text-black hover:text-white"
-                href="#projects"
-                onClick={handleDropdownClick}
-              >
-                Projects
-              </Link>
-              <Link
-                className="px-4 py-3 text-black hover:text-white"
-                href="#experience"
-                onClick={handleDropdownClick}
-              >
-                Experience
-              </Link>
-              <button
-                className="px-4 py-3 text-black hover:text-white"
-                onClick={handleDropdownClick}
-              >
-                Resume
-              </button>
-            </div>
-          )}
+          {isOpen && <Dropdown setDropdownClick={handleDropdownClick} />}
         </>
       )}
     </div>
