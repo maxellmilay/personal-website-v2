@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { open } from '@/utils/font';
 import useWindowSize from '@/hooks/useScreen';
 import { FaBars } from 'react-icons/fa';
@@ -16,11 +16,9 @@ function Navbar() {
   const { width } = useWindowSize();
 
   return (
-    <div>
+    <div className={`flex ${open.className} font-thin my-5 justify-center lg:justify-end lg:px-16`}>
       {width > 640 ? (
-        <div
-          className={`flex ${open.className} font-thin my-5 justify-center lg:justify-end lg:px-16`}
-        >
+        <>
           <Link className="px-8 py-3 text-[#AFAFAF] hover:text-white" href="#about">
             About
           </Link>
@@ -31,9 +29,9 @@ function Navbar() {
             Experience
           </Link>
           <button className="px-8 py-3 text-[#AFAFAF] hover:text-white">Resume</button>
-        </div>
+        </>
       ) : (
-        <div className="flex relative justify-end py-4 px-5">
+        <>
           <button onClick={handleDropdownClick}>
             <FaBars className="text-3xl" />
           </button>
@@ -68,7 +66,7 @@ function Navbar() {
               </button>
             </div>
           )}
-        </div>
+        </>
       )}
     </div>
   );

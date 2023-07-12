@@ -2,7 +2,7 @@ const experience = [
   {
     id: 1,
     company: 'Symph',
-    position: 'Fullstack Developer',
+    position: 'Web Developer Intern',
     start: 'December 2022',
     end: 'March 2023',
     responsibilities: [
