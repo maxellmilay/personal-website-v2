@@ -19,7 +19,7 @@ const featured = [
     id: 2,
     name: 'DJackets',
     description: 'An e-commerce site that sells seasonal jackets',
-    tech: [Tech.VUE, Tech.VITE, Tech.DJANGO, Tech.STRIPE, Tech.SQLITE],
+    tech: [Tech.VUE, Tech.VITE, Tech.DJANGO, Tech.STRIPE, Tech.SQLITE, Tech.TAILWIND],
     imgURL: '/images/featured/djackets.webp',
     align: {
       image: 'justify-end',
