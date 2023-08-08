@@ -10,6 +10,11 @@ enum Tech {
   PYTHON = 'Python',
   HTML = 'HTML',
   CSS = 'CSS',
+  DJANGO = "Django",
+  VUE = "Vue",
+  VITE = "Vite",
+  STRIPE = "Stripe",
+  SQLITE = 'SQLite'
 }
 
 export default Tech;
