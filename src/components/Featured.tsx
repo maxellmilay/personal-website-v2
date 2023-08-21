@@ -43,10 +43,10 @@ function Featured() {
                 })}
               </div>
               <div className="flex mx-auto lg:mx-0">
-                <a href={data.repo} className="px-1 py-1">
+                <a href={data.repo} className="px-1 py-1 hover:-translate-y-1 duration-200">
                   <FaGithub />
                 </a>
-                <a href={data.link} className="px-1 py-1">
+                <a href={data.link} className="px-1 py-1 hover:-translate-y-1 duration-200">
                   <FaExternalLinkAlt />
                 </a>
               </div>

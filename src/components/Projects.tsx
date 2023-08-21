@@ -10,7 +10,10 @@ function Projects() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {projects.map((project) => {
           return (
-            <div key={project.id} className="flex justify-center items-center my-5">
+            <div
+              key={project.id}
+              className="flex justify-center items-center my-5 hover:-translate-y-2 duration-200"
+            >
               <div className="flex flex-col w-[17rem] h-[17rem] bg-[#121212] p-5">
                 <p className={`font-semibold text-xl mb-3 ${open.className} h-[4rem]`}>
                   {project.name}

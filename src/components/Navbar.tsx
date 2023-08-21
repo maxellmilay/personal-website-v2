@@ -19,17 +19,26 @@ function Navbar() {
     <div className={`flex ${open.className} font-thin my-5 justify-end lg:px-16`}>
       {width > 640 ? (
         <>
-          <Link className="px-8 py-3 text-[#AFAFAF] hover:text-white" href="#about">
+          <Link
+            className="px-8 py-3 text-[#AFAFAF] hover:text-white hover:-translate-y-1 duration-200"
+            href="#about"
+          >
             About
           </Link>
-          <Link className="px-8 py-3 text-[#AFAFAF] hover:text-white" href="#projects">
+          <Link
+            className="px-8 py-3 text-[#AFAFAF] hover:text-white hover:-translate-y-1 duration-200"
+            href="#projects "
+          >
             Projects
           </Link>
-          <Link className="px-8 py-3 text-[#AFAFAF] hover:text-white" href="#experience">
+          <Link
+            className="px-8 py-3 text-[#AFAFAF] hover:text-white hover:-translate-y-1 duration-200"
+            href="#experience"
+          >
             Experience
           </Link>
           <Link
-            className="px-8 py-3 text-[#AFAFAF] hover:text-white"
+            className="px-8 py-3 text-[#AFAFAF] hover:text-white hover:-translate-y-1 duration-200"
             href="/Resume.pdf"
             target="_blank"
           >
