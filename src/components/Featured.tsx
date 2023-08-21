@@ -11,15 +11,15 @@ function Featured() {
       {featured.map((data) => {
         return (
           <div
-            className={`flex lg:flex-row flex-col items-center lg:items-start ${data.align.image} mb-16`}
+            className={`group flex lg:flex-row flex-col items-center lg:items-start ${data.align.image} mb-16`}
             key={data.id}
           >
             <div className="relative w-[80%] md:w-[35rem] h-[12rem] sm:h-[20rem]">
               <Image src={data.imgURL} alt={data.name} fill className="object-cover" />
-              <div className="w-full h-full bg-black opacity-60" />
+              <div className="w-full h-full bg-black opacity-60 group-hover:opacity-0 duration-200" />
             </div>
             <div
-              className={`flex flex-col lg:absolute z-10 lg:w-[55rem] py-5 lg:py-0 lg:h-[20rem] justify-center ${data.align.text}`}
+              className={` flex flex-col lg:absolute z-10 lg:w-[55rem] py-5 lg:py-0 lg:h-[20rem] justify-center ${data.align.text}`}
             >
               <p
                 className={`${open.className} text-2xl sm:text-3xl font-semibold mb-6 sm:mb-8 mx-auto lg:mx-0`}
