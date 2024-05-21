@@ -2,13 +2,17 @@ import React from 'react';
 import { work, open } from '@/utils/font';
 import Image from 'next/image';
 import featured from '@/data/featured';
-import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
+import { FaExternalLinkAlt, FaGithub, FaArrowRight, FaArrowLeft } from 'react-icons/fa';
+
+const isLeftFeatured = (index: number) => {
+  return (index%2 === 0)
+}
 
 function Featured() {
   return (
     <div id="featured" className="flex md:w-[55rem] flex-col mb-16">
       <p className={`${work.className} text-2xl mb-10 mx-[10%] lg:mx-0`}>Featured Projects</p>
-      {featured.map((data) => {
+      {featured.map((data, index) => {
         return (
           <div
             className={`group flex lg:flex-row flex-col items-center lg:items-start ${data.align.image} mb-16`}
@@ -21,11 +25,13 @@ function Featured() {
             <div
               className={` flex flex-col lg:absolute z-10 lg:w-[55rem] py-5 lg:py-0 lg:h-[20rem] justify-center ${data.align.text}`}
             >
-              <p
-                className={`${open.className} text-2xl sm:text-3xl font-semibold mb-6 sm:mb-8 mx-auto lg:mx-0`}
+              <button
+                className={`${open.className} flex gap-3 items-center text-2xl sm:text-3xl font-semibold mb-6 sm:mb-8 mx-auto lg:mx-0 ${isLeftFeatured(index) ? 'group-hover:-translate-x-2' : 'group-hover:translate-x-2'} duration-300`}
               >
+                {!isLeftFeatured(index) && <FaArrowLeft className='hidden group-hover:block duration-300 text-[1.25rem]'/> }
                 {data.name}
-              </p>
+                {isLeftFeatured(index) && <FaArrowRight className='hidden group-hover:block duration-300 text-[1.25rem]'/> }
+              </button>
               <p
                 className={`bg-[#121212] w-[95%] md:mx-0 md:w-[30rem] font-thin text-sm p-5 ${open.className} mx-auto lg:mx-0`}
               >
