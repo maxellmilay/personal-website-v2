@@ -21,3 +21,10 @@ body {
   background: black;
 }
 
+.container:nth-child(1) {
+  animation-delay: 0.4s;
+}
+
+.container:nth-child(2) {
+  animation-delay: 3.9s;
+}

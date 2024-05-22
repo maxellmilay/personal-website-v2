@@ -18,8 +18,8 @@ module.exports = {
         }
       },
       animation: {
-        'move-line': 'moveLine 6s linear forwards',
-        'move-down': 'moveDown 1s linear forwards'
+        'move-line': 'moveLine 10s linear forwards',
+        'move-down': 'moveDown 0.4s linear forwards'
       }
     },
   },
