@@ -4,12 +4,12 @@ import { open } from '@/utils/font';
 
 function About() {
   return (
-    <div id="about" className="flex justify-center w-full md:w-auto mb-16">
+    <div id="about" className="flex justify-center w-full md:w-auto pt-16">
       <div className="flex bg-[#121212] w-full mx-[10%] md:mx-0 md:w-[40rem]">
         <p
           className={`${open.className} font-thin text-xs sm:text-base px-8 py-10 sm:px-12 sm:py-14`}
         >
-          I&apos;m Maxell, a full-stack web developer who finds immense joy and fulfillment in
+          I&apos;m Maxell, a <b><i>Machine Learning Engineer</i></b> and <b><i>Full Stack Developer</i></b> who finds immense joy and fulfillment in
           bringing ideas to life through code. <br />
           <br />
           For me, software development is more than just a career—it&apos;s a playground where I can

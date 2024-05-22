@@ -10,7 +10,7 @@ const isLeftFeatured = (index: number) => {
 
 function Featured() {
   return (
-    <div id="featured" className="flex md:w-[55rem] flex-col mb-16">
+    <div id="featured" className="flex md:w-[55rem] flex-col pt-16">
       <p className={`${work.className} text-2xl mb-10 mx-[10%] lg:mx-0`}>Featured Projects</p>
       {featured.map((data, index) => {
         return (
