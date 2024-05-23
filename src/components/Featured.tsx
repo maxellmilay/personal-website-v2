@@ -15,7 +15,7 @@ function Featured() {
       {featured.map((data, index) => {
         return (
           <div
-            className={`group flex lg:flex-row flex-col items-center lg:items-start ${data.align.image} mb-16`}
+            className={`group flex lg:flex-row flex-col items-center lg:items-start ${isLeftFeatured(index) ? 'justify-start' : 'justify-end'} mb-16`}
             key={data.id}
           >
             <div className="relative w-[80%] md:w-[35rem] h-[12rem] sm:h-[20rem]">
@@ -23,7 +23,7 @@ function Featured() {
               <div className="w-full h-full bg-black opacity-60 group-hover:opacity-0 duration-200" />
             </div>
             <div
-              className={` flex flex-col lg:absolute z-10 lg:w-[55rem] py-5 lg:py-0 lg:h-[20rem] justify-center ${data.align.text}`}
+              className={` flex flex-col lg:absolute z-10 lg:w-[55rem] py-5 lg:py-0 lg:h-[20rem] justify-center ${isLeftFeatured(index) ? 'items-end' : 'items-start'}`}
             >
               <button
                 className={`${open.className} flex gap-3 items-center text-2xl sm:text-3xl font-semibold mb-6 sm:mb-8 mx-auto lg:mx-0 ${isLeftFeatured(index) ? 'group-hover:-translate-x-2' : 'group-hover:translate-x-2'} duration-300`}
@@ -49,12 +49,12 @@ function Featured() {
                 })}
               </div>
               <div className="flex mx-auto lg:mx-0">
-                <a href={data.repo} className="px-1 py-1 hover:-translate-y-1 duration-200">
+                {data.repo && <a href={data.repo} className="px-1 py-1 hover:-translate-y-1 duration-200">
                   <FaGithub />
-                </a>
-                <a href={data.link} className="px-1 py-1 hover:-translate-y-1 duration-200">
+                </a>}
+                {data.link && <a href={data.link} className="px-1 py-1 hover:-translate-y-1 duration-200">
                   <FaExternalLinkAlt />
-                </a>
+                </a>}
               </div>
             </div>
           </div>

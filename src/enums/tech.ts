@@ -14,7 +14,11 @@ enum Tech {
   VUE = "Vue",
   VITE = "Vite",
   STRIPE = "Stripe",
-  SQLITE = 'SQLite'
+  SQLITE = 'SQLite',
+  LANGCHAIN = 'LangChain',
+  OPENAI = 'OpenAI',
+  OAUTH_2 = 'OAUTH 2.0',
+  PSQL = 'PostgreSQL'
 }
 
 export default Tech;
