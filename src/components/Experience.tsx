@@ -16,8 +16,8 @@ function Experience() {
         {
           experiences.map((experience, index) => {
             return <div key={experience.name} className={`relative py-[40px] md:w-1/2 px-[50px] ${isLeft(index) ? `md:left-0` : `md:left-[50%]`} left-[30px] animate-move-down opacity-0 container`}>
-              <img src={experience.logo} className={`absolute bg-white w-[60px] rounded-[50%] z-10 top-[55px] ${isLeft(index) ? 'md:right-[-30px] left-[-30px] md:left-auto' : 'left-[-30px]'}`}/>
-            <div className={`relative flex flex-col flex-wrap w-[90%] ${isLeft(index) ? 'md:ml-[10%]' : "md:ml-0"} flex-wrap py-[20px] px-[30px] bg-[#121212] border rounded-[6px] text-sm`}>
+              <img src={experience.logo} className={`absolute bg-white w-[60px] rounded-[50%] z-10 top-[55px] ${isLeft(index) ? 'md:right-[-30px] left-[-30px] md:left-auto' : 'left-[-30px]'} hover:scale-110 duration-300`}/>
+            <div className={`relative flex flex-col flex-wrap w-[90%] ${isLeft(index) ? 'md:ml-[10%]' : "md:ml-0"} flex-wrap py-[20px] px-[30px] bg-[#121212] border rounded-[6px] text-sm hover:scale-125 ${isLeft(index) ? 'hover:-translate-x-2 origin-top-right': 'hover:translate-x-2 origin-top-left'} hover:-translate-y-2 duration-300`}>
               <b>{experience.name}</b>
               <i className='text-xs'>{experience.job_position}</i>
               <small>{experience.start_date} - {experience.end_date}</small>
