@@ -60,6 +60,16 @@ const updatedFeatured = [
     imgURL: '/images/featured/greenwallet.png',
     repo: 'https://github.com/maxellmilay/green-wallet',
     link: 'https://greenwallet.site'
-  }
+  },
+  {
+    id: 3,
+    name: 'TMI Blog',
+    description:
+      'TMI Fellowship is a blog website that showcases the activities and missions of a church.',
+    tech: [Tech.TAILWIND, Tech.NEXT],
+    imgURL: '/images/featured/tmi-blog.webp',
+    link: 'https://www.tmifellowship.org',
+    repo: 'https://github.com/maxellmilay/tmi',
+  },
 ]
 export default updatedFeatured;

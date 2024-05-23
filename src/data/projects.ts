@@ -28,16 +28,6 @@ const projects = [
     repo: 'https://github.com/maxellmilay/medata-frontend',
   },
   {
-    id: 4,
-    name: 'TMI Blog',
-    description:
-      'A blog website that showcases the activities and missions of a church.',
-    tech: [Tech.TAILWIND, Tech.NEXT],
-    imgURL: '/images/featured/tmi-blog.webp',
-    link: 'https://www.tmifellowship.org',
-    repo: 'https://github.com/maxellmilay/tmi',
-  },
-  {
     id: 5,
     name: 'Rotom Dex',
     description: 'A pokedex desktop application that displays and filters Gen 1 Pokemon',
