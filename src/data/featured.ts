@@ -47,22 +47,31 @@ const updatedFeatured = [
     id: 1,
     name: 'Beacon',
     description: 'A career guidance web app that uses Generative AI to provide users with personalized visual road maps towards their viable career option based on their user information',
-    tech: [Tech.NEXT, Tech.TAILWIND, Tech.DJANGO, Tech.FIREBASE, Tech.LANGCHAIN, Tech.OPENAI],
+    tech: [Tech.NEXT, Tech.TAILWIND, Tech.DJANGO, Tech.FIREBASE, Tech.LANGCHAIN, Tech.OPENAI, Tech.GCP],
     imgURL: '/images/featured/beacon.png',
     repo: 'https://github.com/maxellmilay/beacon',
-    link: ''
+    link: 'https://beaconph.site'
   },
   {
     id: 2,
+    name: 'Finite Automaton Visualizer',
+    description: 'A visualizer for generating DFA diagrams from regular expressions',
+    tech: [Tech.NEXT, Tech.TAILWIND, Tech.REACTFLOW],
+    imgURL: '/images/featured/fa-visualizer.png',
+    repo: 'https://github.com/maxellmilay/fa-visualizer',
+    link: 'https://favisualizer.vercel.app'
+  },
+  {
+    id: 3,
     name: 'GreenWallet',
     description: 'A budget tracker web app where users can create collections of received and outgoing transactions',
     tech: [Tech.VUE, Tech.DJANGO, Tech.TAILWIND, Tech.VITE, Tech.OAUTH_2, Tech.PSQL],
     imgURL: '/images/featured/greenwallet.png',
-    repo: 'https://github.com/maxellmilay/green-wallet',
+    repo: 'https://github.com/maxellmilay/greenwallet',
     link: 'https://greenwallet.site'
   },
   {
-    id: 3,
+    id: 4,
     name: 'TMI Blog',
     description:
       'TMI Fellowship is a blog website that showcases the activities and missions of a church.',
