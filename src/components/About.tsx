@@ -9,7 +9,7 @@ function About() {
         <p
           className={`${open.className} font-thin text-xs sm:text-base px-8 py-10 sm:px-12 sm:py-14`}
         >
-          I&apos;m Maxell, a <b><i>Machine Learning Engineer</i></b> and <b><i>Full Stack Developer</i></b> who finds immense joy and fulfillment in
+          I&apos;m Maxell, an <b><i>AI Engineer</i></b> specializing in Machine Learning, and also a <b><i>Full Stack Developer</i></b> who finds immense joy and fulfillment in
           bringing ideas to life through code. <br />
           <br />
           For me, software development is more than just a career—it&apos;s a playground where I can
