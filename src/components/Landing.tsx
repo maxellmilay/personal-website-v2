@@ -12,7 +12,7 @@ function Landing() {
       <div className="flex flex-col items-center lg:items-start justify-center">
         <h1 className={`${work.className} text-4xl sm:text-5xl mb-1`}>Maxell Milay</h1>
         <h2 className={`${open.className} text-lg sm:text-xl font-thin mb-8`}>
-          Machine Learning Engineer
+          AI Engineer
         </h2>
         <Link
           className={`${work.className} p-4 border border-solid border-white rounded hover:bg-white duration-300 hover:text-black`}
