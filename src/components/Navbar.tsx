@@ -36,7 +36,7 @@ function Navbar() {
           </Link>
           <Link
             className="px-8 py-3 text-[#AFAFAF] hover:text-white hover:-translate-y-1 duration-200"
-            href="/Resume.pdf"
+            href="/cv.pdf"
             target="_blank"
           >
             Resume
