@@ -28,3 +28,11 @@ body {
 .container:nth-child(2) {
   animation-delay: 3.9s;
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -92,6 +92,15 @@ const projects = [
     repo: 'https://github.com/maxellmilay/personal-website-v2',
     tech: [Tech.NEXT, Tech.TAILWIND],
   },
+  {
+    id: 13,
+    name: 'Lakbai',
+    description:
+      'GIS app with a data-driven pedestrian accessibility index powered by fuzzy logic for sustainable urban mobility in the Philippines. Champion of the 2024 Philippine Junior Data Science Challenge.',
+    link: '',
+    repo: 'https://github.com/maxellmilay/lakbai',
+    tech: [Tech.NEXT, Tech.DJANGO, Tech.PSQL, Tech.GCP, Tech.PYTHON],
+  },
 ];
 
 export default projects;
