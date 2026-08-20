@@ -25,7 +25,7 @@ const experiences: Experience[] = [
       'Engineered FNOL claims processing system using spaCy NLP pipelines, achieving 88% accuracy across 15+ structured field types',
       'Optimized LLM inference costs via prompt engineering and model selection, reducing API expenses by 30%',
     ],
-    logo: null,
+    logo: '/images/eclaro.png',
     logoFallback: 'EC',
   },
   {
@@ -41,7 +41,7 @@ const experiences: Experience[] = [
       'Streamlined ML experimentation using MLflow, reducing iteration time by 45% across 50+ experiments',
       'Deployed Streamlit-based voice model interface, reducing non-technical user setup time from 2 hours to 15 minutes',
     ],
-    logo: null,
+    logo: '/images/insight-genie.jpg',
     logoFallback: 'IG',
   },
   {
@@ -57,7 +57,7 @@ const experiences: Experience[] = [
       'Implemented CI/CD pipelines decreasing release cycle time from 2 weeks to 3 days',
       'Established code quality standards reducing production bugs by 65% and technical debt by 55%',
     ],
-    logo: null,
+    logo: '/images/bitwork-solutions.jpg',
     logoFallback: 'BW',
   },
   {
